@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:backgroundTint="@color/colorPrimary2"
+    android:padding="10dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageViewUserPicture"
+        android:layout_width="71dp"
+        android:layout_height="87dp"
+        android:src="@drawable/ic_account_circle_yellow_24dp" />
+
+    <TextView
+        android:id="@+id/konum"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/username"
+        android:layout_alignLeft="@+id/username"
+        android:layout_alignBottom="@+id/imageViewUserPicture"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="-9dp"
+        android:layout_marginBottom="0dp"
+        android:text="İstanbul - Beykoz"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/bilgi"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toRightOf="@+id/imageView2"
+        android:text="Ali Çoban Mersin Kalacak Yer Arıyor"
+        android:textSize="13sp"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="31dp"
+        android:layout_toRightOf="@+id/imageViewUserPicture"
+        app:srcCompat="@drawable/ic_home_black_24dp" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/imageViewUserPicture"
+        android:text="Ali Çoban"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="71dp"
+        android:layout_toRightOf="@+id/imageViewUserPicture"
+        app:srcCompat="@drawable/location" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="67dp"
+        android:layout_toRightOf="@+id/konum"
+        app:srcCompat="@drawable/dollar" />
+
+    <TextView
+        android:id="@+id/para"
+        android:layout_width="149dp"
+        android:layout_height="19dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="68dp"
+        android:layout_toRightOf="@+id/imageView4"
+        android:text="1000₺"
+        android:textColor="@color/colorPrimary2"
+        android:textSize="13sp" />
+
+
+</RelativeLayout>
